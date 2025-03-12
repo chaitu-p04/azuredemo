@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - Bangalore Institute of Technology</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(160, 168, 216) ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            margin: 0;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.3); /* Increased transparency */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 500x;
+            backdrop-filter: blur(10px); /* Adds a frosted glass effect */
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        .input-group input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.6);
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(45deg, #ff5733, #007bff);
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .login-btn:hover {
+            background: linear-gradient(45deg, #ff5733, #0056b3);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Bangalore Institute of Technology</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="student-id">Student ID</label>
+                <input type="text" id="student-id" name="student-id" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </div>
+</body>
+</html>
